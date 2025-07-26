@@ -1,13 +1,10 @@
 "use client";
-import Image from "next/image";
 import { TbArrowUpRight } from "react-icons/tb";
 import 'swiper/css';
 import { Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-
 export default function CatalogSwiperSection() {
-
     return (
         <div className="py-8 lg:py-28">
             <div className="container grid pb-8 lg:grid-cols-2">
@@ -26,7 +23,9 @@ export default function CatalogSwiperSection() {
                             <p>
                                 We create distinctive and unique designs that are inspired by the latest trends in interior design and fashion.
                             </p>
-                            <a href="" className="inline-flex items-center pt-4 text-lg font-bold text-black underline">View Gallery <TbArrowUpRight /> </a>
+                            <a href="" className="inline-flex items-center pt-4 text-lg font-bold text-black underline">
+                                View Gallery <TbArrowUpRight />
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -46,24 +45,23 @@ export default function CatalogSwiperSection() {
                 }}
                 autoplay={{ delay: 2500, disableOnInteraction: false }}
                 modules={[Autoplay]}
-
             >
                 <SwiperSlide>
-                    <Image src="/image/swiper1.jpg" alt="LOGO" width={520} height={220} className="w-full" />
+                    <img src="/image/swiper1.jpg" alt="LOGO" width={520} height={220} className="w-full" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <Image src="/image/swiper2.jpg" alt="LOGO" width={520} height={220} className="w-full" />
+                    <img src="/image/swiper2.jpg" alt="LOGO" width={520} height={220} className="w-full" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <Image src="/image/swiper3.jpg" alt="LOGO" width={520} height={220} className="w-full" />
+                    <img src="/image/swiper3.jpg" alt="LOGO" width={520} height={220} className="w-full" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <Image src="/image/swiper4.jpg" alt="LOGO" width={520} height={220} className="w-full" />
+                    <img src="/image/swiper4.jpg" alt="LOGO" width={520} height={220} className="w-full" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <Image src="/image/swiper5.jpg" alt="LOGO" width={520} height={220} className="w-full" />
+                    <img src="/image/swiper5.jpg" alt="LOGO" width={520} height={220} className="w-full" />
                 </SwiperSlide>
             </Swiper>
         </div>
-    )
+    );
 }
